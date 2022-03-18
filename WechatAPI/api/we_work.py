@@ -15,16 +15,16 @@ PO封装
 import xdist
 import random
 from WechatAPI.api.base import BaseApi
-"""数据参数�?.0"""
+"""数据参数0"""
 def test_data():
     data = [("userid" + str(i),"名字" + str(i),"138%08d"%i) for i in range(8)]
     return data
 class Wework(BaseApi):
     def __init__(self):
-        self.token = Util().token() #不要忘了Util�?)
-        self.params["token"]=self.token #要记得替换token的变�?
+        self.token = Util().token() #不要忘了Util?)
+        self.params["token"]=self.token #要记得替换token的变
 
-        with open("./api/wework.yaml",encoding="utf-8")as f:
+        with open("../api/wework.yaml",encoding="utf-8")as f:
             self.data=yaml.load(f)
 
     def test_creat_member(self,userid,name,mobile,department=None):
