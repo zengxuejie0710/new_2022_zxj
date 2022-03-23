@@ -12,7 +12,7 @@ from WechatAPI.api.util import Util
 PO封装
 """
 
-import xdist
+# import xdist
 import random
 from WechatAPI.api.base import BaseApi
 """数据参数0"""

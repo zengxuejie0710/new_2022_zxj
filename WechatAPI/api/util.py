@@ -10,7 +10,7 @@ import re
 PO封装
 """
 
-import xdist
+# import xdist
 import random
 import requests
 
